@@ -54,7 +54,8 @@ public class Ship : MonoBehaviour
                         //attempt to make a dynamic sprite renderer
                         foreach (GameObject o in ship)
                         {   //image bug               
-                            ShipSizeTileSprite.GetComponent<SpriteRenderer>().sprite = DownSide[int.Parse(ShipSizeTile)];                            
+                            ShipSizeTileSprite.GetComponent<SpriteRenderer>().sprite = DownSide[int.Parse(ShipSizeTile)];
+                            //adicionar corotinho que esta no GridController
                         }
 
                         //ShipSizeTileSprite.GetComponent<SpriteRenderer>().sprite = BackSide;
@@ -90,8 +91,7 @@ public class Ship : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             ship[i].GetComponent<SpriteRenderer>().sprite = WhenSunk;
         }
-        //ship[TotalHit].
-        // Destroy(gameObject);
+        
     }
 
 
