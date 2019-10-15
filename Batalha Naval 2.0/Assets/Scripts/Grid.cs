@@ -5,7 +5,7 @@ using UnityEngine;
 public class Grid : MonoBehaviour
 {
     public static int jogadorAtual;
-    public GameObject agua;
+    public Sprite agua;
 
     void Start()
     {
